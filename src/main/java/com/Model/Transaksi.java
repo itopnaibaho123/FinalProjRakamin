@@ -1,6 +1,5 @@
 package com.Model;
 
-
 import java.io.Serializable;
 
 import javax.persistence.CascadeType;
@@ -12,11 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-
 import lombok.Getter;
 import lombok.Setter;
-
 @Setter
 @Getter
 @Entity
