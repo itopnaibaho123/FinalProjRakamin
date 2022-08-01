@@ -2,26 +2,18 @@ package com.Model;
 
 import java.io.Serializable;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
 @Setter
 @Getter
 @Entity
 @Table(name = "transaksi")
-public class Transaksi implements Serializable{
-        
+public class Transaksi implements Serializable {
 
     @Id
-    @Column(name = "Id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -44,5 +36,4 @@ public class Transaksi implements Serializable{
 
     @Column(name= "status", nullable = false, length = 1337)
     private String status;
-
 }

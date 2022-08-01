@@ -33,7 +33,7 @@ public class users implements Serializable{
     private user_detail userDetail;
 
     @Id
-    @Column(name = "Id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
