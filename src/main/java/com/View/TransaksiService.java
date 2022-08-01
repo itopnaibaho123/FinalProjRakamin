@@ -12,4 +12,5 @@ import com.Model.Transaksi;
 public interface TransaksiService {
     public Map save(Transaksi transaksi);
     public Map updateStatus(Transaksi transaksi);
+    
 }
