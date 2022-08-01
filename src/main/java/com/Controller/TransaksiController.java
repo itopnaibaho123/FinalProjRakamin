@@ -31,7 +31,7 @@ public class TransaksiController {
         Map update = servis.updateStatus(transaksi);
         return new ResponseEntity<Map>(update, HttpStatus.OK);// response
     }
-    @GetMapping("/list/")
+    @GetMapping("/list")
     @ResponseBody
     public ResponseEntity<Page<Transaksi>> listByNamaLike(
             @RequestParam() Integer page,
